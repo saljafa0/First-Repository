@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="keywords"
+			content="woodworking,wood,tools,materials,clear coat,clean finish" />
+		<link href="Project base1-1.css"  rel="stylesheet" />
+		<link href="project1-2pagelayout.css" rel="stylesheet" />
+		<script src="Project2-javascripts.js" defer></script>
+		<title> woodworking101 Account
+		</title>
+	</head>
+	
+	<body>
+		<header>
+		<div class="container">
+		<h1>Account</h1>
+		<nav>
+				<ul class="menu">
+					<li><a href="Web110-N801-Project-part1-HTML-Mainpage.html">Main Page</a></li>
+					<li><a href="project1-types_of_wood.html">Types of Wood</a></li>
+					<li><a href="project1-tools.html">Tools</a></li>
+					<li><a href="project1-clear_coat.html">Clear coat</a></li>	
+					<li><a href="project2-Account page.html">Account</a></li>	
+				</ul>
+				
+			</nav>
+		</div>
+		
+		</header>
+		
+		
+		<!-- Create and format a form with multiple field sets
+	Include the following input types: text, date/time, radio buttons, spinners, range sliders, and check boxes -->
+		
+		<form action="action_page.php" method="POST">
+			<label for="username"> Login:</label>
+			<input type="username" id='username' name="username" placeholder="user name" required><!--Validate data with by having certain fields required -->
+			<br>
+			<div>
+			<label for="pass">password:</label>
+			<input type="password" id="password" name="pass" placeholder="password" maxlength=12 required ><!--Validate data with patterns and field lengths  -->
+			</div>
+			<br>
+			<div>
+				<label for="bdate"> birthdate:</label>
+				<input type="date" id="bdate" name="bdate" ><!--Include a datalist and use it for input   -->
+			</div>
+			<br>
+			
+			
+			
+			
+			<div>
+				<label>man</label>
+				<input type="radio" name="gender" value="Man"><!--Radio buttons   -->
+			
+				<label>woman</label>
+				<input type="radio" name="gender" value="Woman">
+			</div>
+			<br>
+			<div>
+				<label for="email">e-mail:</label>
+				<input type="email" id="email" name="email" ><!--Include at least one input that is set for a mobile keyboard type (e.g. number, email, url, etc.)   -->
+			</div>
+			<br>
+			<div>
+				<label for="issues">Issues:</label>
+				<!--Create and format a text area   -->
+				<textarea id="issues" char=> </textarea>
+			
+			</div>
+			<br>
+			<div>
+				<label for="account">Account Level:</label><!--Create a selection list-->
+				<select id="account" name="account">
+					<option value="$1">silver</option>
+					<option value="$5">gold</option>
+					<option value="$10">diamond</option>
+				</select>
+				
+			<br>
+			<div>
+				<label for="notifications">Do you want notifications from us:</label>
+				<input type="checkbox" id="notifications" name="notifications"><!--Use the focus pseudo class to format valid and invalid selected boxes   -->
+			
+			
+			</div>
+			<br>
+				
+			<div>
+				<input type="reset"><!-- Create a submit and cancel/reset button-->
+			
+			
+			
+				<input type="submit"><!-- Create a submit and cancel/reset button-->
+			</div>
+					
+		</form>
+		
+	</body>
+	<footer>
+		<script>
+		runClock();
+		setInterval("runClock()", 1000);
+		function runClock(){
+			var currentDate= new Date();
+			var datStr = currentDay.toLocalDateString();
+			var timeStr = currentDay.toLacalTimeString();
+		
+		document.getElementByID("dateNow").innerHTML = dateStr + "<br /> + timeStr;
+		</script>
+		<script>alert("create your account!!");</script>
+	
+		<script src="Project2-javascripts.js" defer></script>
+		
+	</footer>
+</html>
+
+

@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/*
+From Tutorial 3 – Page Layouts:
+
+Use both block and floating elements
+Create a floated layout
+Create a grid layout
+Experiment with relative and absolute positioning
+Handle overflow
+
+Tutorial 5 – Mobile Design:
+
+Implement responsive design to different screen widths using @media and flex/flexbox
+Include a pulldown menu (optional)
+
+
+*/
+
+/*body header styles*/
+
+header::after  {
+	display:table;
+	float:right;
+	clear: both;
+	content: '';
+}
+.container {
+	width:80%;
+	margin:0 auto;
+}
+h1{
+	float: left;
+	text-align:center-left;
+	padding-left: 10px;
+}
+body{
+	display: grid;
+	outline-width: 11px;
+	outline-color: orange;
+	outline-style: solid;
+	margin: 0;
+}
+nav {
+	float: right;
+}
+nav ul {
+	display: inline-block;
+	padding: 10px;
+	list-style: none;
+	margin: 10px;
+}
+.menu ul{
+	padding: 10px;
+	float: right;
+}
+nav li {
+	display: inline-block;
+	text-align: right;
+	margin: 20px
+}
+article{
+	overflow:auto;
+	position:relative;
+	height: 500px;
+	width: 100%;
+}
+header{ 
+display: flex;
+flex-flow:row nowrap;
+}
+form{
+	float: center;
+	
+}
+footer::after{
+	display:inline
+}	
+	
+	
+
+@media screen and (device-width:320px){
+	color:orange;
+}
+@media screen and max-width:700px){
+color:orange;
+}	
+	
+
